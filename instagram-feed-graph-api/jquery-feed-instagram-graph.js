@@ -31,10 +31,10 @@ if ($('#instagram-feed1').length != 0) {
                 html += '">';
                 html += '<a class="insta-link" href="' + link + '" rel="noopener" target="_blank">';
                 if (response.data[x]['media_type'] == 'VIDEO') {
-                    html += '<img src="' + image_video + '" loading="lazy" alt="' + caption + '" class="img-fluid mx-auto d-block" />';
+                    html += '<img src="' + image_video + '" loading="lazy" alt="' + caption + '" class="img-fluid mx-auto d-block" style="max-height: 15rem;"/>';
                 }
                 else {
-                    html += '<img src="' + image + '" loading="lazy" alt="' + caption + '" class="img-fluid mx-auto d-block" />';
+                    html += '<img src="' + image + '" loading="lazy" alt="' + caption + '" class="img-fluid mx-auto d-block" style="max-height: 15rem;"/>';
                 }
                 html += '</a>';
                 html += '</div>';

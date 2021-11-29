@@ -65,3 +65,34 @@
     }
 
 }
+
+.carousel-inner {
+    position: relative;
+}
+.carousel-inner::after {
+    position: absolute;
+    content: '';
+    height: 20rem;
+    width:  18rem;
+    background-color: rgba(255, 255, 255, 0.59);
+ }
+.carousel-inner::before {
+    position: absolute;
+    content: '';
+    height: 20rem;
+    width:  18rem;
+    background-color: rgba(255, 255, 255, 0.59);
+    left: 52rem;
+    z-index: 1;
+ }
+
+a {
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    margin-left: 8rem;
+}
+.carousel-control-next {
+    margin-right: 8rem;
+}
